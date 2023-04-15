@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="nav nav = list bg-color-dark">
+            <ul>
+                <li class="link link-nav">Curso de Javascript</li>
+                <li class="link link-nav">Módulos</li>
+                <li class="link link-nav">Links</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container m-5 bg-color-dark">
+            Texto do Menu
+        </div>
+    </main>
+    <button id="mensagem" onclick="saudacao ()">Botão de mensagem</button>
+    <script type="text/javascript" src="clicando.js"></script>
+    <footer>
+        <nav class="nav nav-list nav-list-horizontal bg-color-dark">
+            <ul>
+                <li class="link link-nav">Desenvolvido por <span>Miltin</span></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script>
+    var nome = prompt ('Qual é o seu nome? ');
+    alert ("Meu nome é " + nome + " estou muito feliz por ver você por aqui!");
+   var dodo1 = document.getElementById ("header-nav").innerText = "Meu Curso de Java Script";
+   alert (dodo1);
+   var dodo2 = document.getElementsByClassName ("link link-nav").innerText= "apresento diferentes módulos";
+   alert (dodo2);
+   var dodo3 = document.getElementsByClassName ("link link-nav").innerText= "Desenvolvido por Dodô";
+   alert (dodo3);
+        let navs = document.querySelectorAll('nav');
+        for (let k = 0; k < navs.length; k++); {
+            navs[k].innerHTML = "Novo texto";
+            alert (navs[k]);
+        }
+        
+</script>
+</html>
